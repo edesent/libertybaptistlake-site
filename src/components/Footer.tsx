@@ -1,4 +1,7 @@
-const quickLinks = [
+const GIVELIFY_URL =
+  "https://www.givelify.com/donate/liberty-baptist-church-lake-mi-2j7wy5MTUyNzc2NQ==/donation/amount";
+
+const quickLinks: { href: string; label: string; external?: boolean }[] = [
   { href: "#home", label: "Home" },
   { href: "#welcome", label: "Welcome" },
   { href: "#services", label: "Service Times" },
@@ -6,6 +9,7 @@ const quickLinks = [
   { href: "/we-believe", label: "We Believe" },
   { href: "/ministries", label: "Ministries" },
   { href: "/visit", label: "Plan a Visit" },
+  { href: GIVELIFY_URL, label: "Give Online", external: true },
 ];
 
 const serviceTimes = [
@@ -52,6 +56,9 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    {...(link.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                     className="text-sm text-white/55 hover:text-teal-light sm:hover:pl-1 transition-all inline-block"
                   >
                     {link.label}
