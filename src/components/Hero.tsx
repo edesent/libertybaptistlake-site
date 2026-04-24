@@ -85,52 +85,25 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl px-6 py-20">
-        {/* Logo mark */}
-        <div className="flex justify-center mb-8 animate-fade-up animation-delay-200">
-          <div className="relative">
-            <span
-              className="absolute inset-0 rounded-full bg-teal/20 blur-2xl animate-glow-pulse"
-              aria-hidden="true"
-            />
-            <span className="relative flex items-center justify-center w-24 h-24 rounded-full bg-white/[.06] backdrop-blur-sm border border-white/20">
-              <img
-                src="/lbc-logo.png"
-                alt="Liberty Baptist Church"
-                className="w-20 h-20 object-contain brightness-0 invert"
-              />
-            </span>
-          </div>
+        <div className="flex justify-center animate-fade-up animation-delay-600">
+          <img
+            src="/speaking-the-truth-in-love.png"
+            alt="Liberty Baptist Church"
+            className="w-full max-w-[18rem] md:max-w-[24rem] lg:max-w-[28rem] object-contain drop-shadow-[0_0_40px_rgba(5,8,16,0.45)]"
+          />
         </div>
-
-        <p className="text-xs md:text-sm font-semibold tracking-[0.4em] uppercase text-teal-light/90 mb-5 animate-fade-up animation-delay-400">
-          Liberty Baptist Church &middot; Lake, Michigan
-        </p>
-
-        <h1 className="animate-fade-up animation-delay-600">
-          <span className="block font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-white/60 tracking-tight leading-[0.95]">
-            Life can be
-          </span>
-          <span
-            className="block font-serif text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.95] mt-1"
-            style={{
-              background: "linear-gradient(180deg, #ffffff 0%, #f5cf8c 60%, #e8a64a 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              textShadow: "0 0 80px rgba(232,166,74,0.25)",
-            }}
-          >
-            dark.
-          </span>
-        </h1>
 
         <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-teal-light to-transparent mx-auto my-8 animate-fade-up animation-delay-800" />
 
-        <p className="font-serif text-xl md:text-3xl italic text-white/90 leading-relaxed max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-900">
-          Discover the <em className="not-italic font-semibold text-amber-light">light of Jesus</em> here.
+        <h1 className="font-serif text-4xl md:text-6xl font-semibold uppercase tracking-[0.12em] text-white/88 animate-fade-up animation-delay-900">
+          LIFE CAN BE DARK
+        </h1>
+
+        <p className="font-serif text-xl md:text-3xl italic text-white/90 leading-relaxed max-w-2xl mx-auto mt-5 mb-10 animate-fade-up animation-delay-1000">
+          Discover the <em className="not-italic font-semibold text-amber-light">Light of Jesus</em> Here.
         </p>
 
-        <div className="flex gap-4 justify-center flex-wrap animate-fade-up animation-delay-1000">
+        <div className="flex gap-4 justify-center flex-wrap animate-fade-up animation-delay-1100">
           <a
             href="/visit"
             className="inline-flex items-center gap-2 bg-teal text-white font-semibold text-sm tracking-wide uppercase px-9 py-4 rounded-full hover:bg-teal-light hover:text-ink hover:-translate-y-0.5 transition-all shadow-[0_10px_40px_rgba(47,153,149,0.45)]"

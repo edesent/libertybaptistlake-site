@@ -106,10 +106,11 @@ export default function Footer() {
               </a>
             </div>
             <p className="font-serif italic text-sm text-white/45 leading-relaxed">
-              &ldquo;Arise, shine; for thy light is come.&rdquo;
+              &ldquo;But speaking the truth in love, may grow up into him in
+              all things, which is the head, even Christ:&rdquo;
             </p>
             <p className="text-[0.7rem] tracking-[0.2em] uppercase text-white/30 mt-2">
-              &mdash; Isaiah 60:1
+              &mdash; Ephesians 4:15
             </p>
           </div>
         </div>

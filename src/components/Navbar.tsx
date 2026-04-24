@@ -57,13 +57,6 @@ export default function Navbar() {
           className="flex items-center gap-3 group"
           aria-label="Liberty Baptist Church"
         >
-          <span className="relative flex items-center justify-center w-11 h-11 rounded-full bg-white/[.08] border border-white/15 overflow-hidden transition-all group-hover:border-teal-light/50 group-hover:bg-white/15">
-            <img
-              src="/lbc-logo.png"
-              alt=""
-              className="w-8 h-8 object-contain brightness-0 invert"
-            />
-          </span>
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-white text-lg md:text-xl font-semibold tracking-wide">
               Liberty Baptist

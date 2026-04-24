@@ -45,15 +45,14 @@ export default function ScriptureBanner() {
         </div>
 
         <blockquote>
-          <p className="font-serif text-3xl md:text-5xl font-medium text-white leading-[1.15] tracking-tight mb-8">
+          <p className="font-serif text-2xl md:text-4xl lg:text-5xl font-medium text-white leading-[1.2] tracking-tight mb-8">
             <span className="text-amber-light">&ldquo;</span>
-            Thy word is a{" "}
-            <em className="italic text-amber-light">lamp</em> unto my feet,
-            and a <em className="italic text-amber-light">light</em> unto my path.
+            But speaking the truth in love, may grow up into him in all
+            things, which is the head, even Christ:
             <span className="text-amber-light">&rdquo;</span>
           </p>
           <cite className="text-sm font-semibold tracking-[0.35em] uppercase text-teal-light not-italic">
-            &mdash; Psalm 119:105
+            &mdash; Ephesians 4:15
           </cite>
         </blockquote>
       </div>
