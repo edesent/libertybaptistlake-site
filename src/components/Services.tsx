@@ -4,137 +4,139 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const services = [
   {
+    day: "Sunday",
     title: "Sunday School",
     time: "10:00 AM",
-    day: "Sunday",
-    body: "Classes for children, teens, and adults studying the Bible together.",
+    desc: "Bible classes for every age — children, teens, and adults learning together.",
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 text-teal-light">
+        <rect x="8" y="10" width="32" height="28" rx="3" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M14 18h20M14 24h20M14 30h14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    ),
   },
   {
+    day: "Sunday",
     title: "Morning Worship",
     time: "11:00 AM",
-    day: "Sunday",
-    body: "Hymn singing, prayer, special music, and preaching from the King James Bible.",
+    desc: "Traditional hymns, congregational prayer, and preaching from the King James Bible.",
     featured: true,
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 text-amber-light">
+        <path d="M24 4 L34 14 L34 32 L38 36 L38 44 L10 44 L10 36 L14 32 L14 14 Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M24 12 V22 M19 17 H29" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    ),
   },
   {
+    day: "Sunday",
     title: "Evening Service",
     time: "6:00 PM",
-    day: "Sunday",
-    body: "A quieter close to the Lord's Day with testimony, singing, and the Word.",
+    desc: "A reflective close to the Lord's Day — testimony, singing, and the Word.",
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 text-teal-light">
+        <path d="M32 24a8 8 0 1 1-8-8 6 6 0 0 0 8 8z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M40 12l-2 2M38 24h3M14 40l-2 2M10 30H7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
   },
   {
+    day: "Thursday",
     title: "Prayer & Bible Study",
     time: "6:30 PM",
-    day: "Thursday",
-    body: "A midweek time for prayer, Scripture, and carrying burdens together.",
+    desc: "Midweek prayer meeting and verse-by-verse study. A good place to bring burdens.",
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 text-teal-light">
+        <path d="M24 6v6M12 12l4 4M6 24h6M12 36l4-4M24 36v6M36 36l-4-4M42 24h-6M36 12l-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="24" cy="24" r="6" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    ),
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="relative overflow-hidden bg-[#1d1715] py-28 text-white">
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(18,14,13,0.9) 0%, rgba(29,23,21,0.92) 100%), radial-gradient(circle at 15% 20%, rgba(200,141,87,0.14), transparent 22%), radial-gradient(circle at 82% 72%, rgba(152,97,74,0.14), transparent 24%), repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 82px)",
-        }}
-      />
+    <section id="services" className="relative py-28 overflow-hidden bg-ink">
+      {/* Atmosphere */}
+      <div className="absolute inset-0">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(47,153,149,0.15) 0%, transparent 50%), radial-gradient(ellipse 80% 60% at 50% 100%, rgba(232,166,74,0.12) 0%, transparent 55%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.04) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.03) 0%, transparent 40%)",
+          }}
+        />
+      </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr]">
-          <AnimateOnScroll>
-            <div className="lg:sticky lg:top-28">
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.32em] text-amber-light">
-                Gather with us
-              </p>
-              <h2 className="mt-5 font-serif text-4xl font-semibold leading-[1.02] text-balance md:text-5xl lg:text-6xl">
-                A weekly rhythm built around worship, prayer, and preaching.
-              </h2>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/68">
-                There is no complicated production to figure out here. Just
-                faithful services, old hymns, the Bible opened plainly, and a
-                church family learning to walk with Christ together.
-              </p>
-
-              <div className="mt-10 border border-white/10 bg-white/[0.05] p-6">
-                <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-amber-light">
-                  If you are new
-                </p>
-                <p className="mt-4 leading-relaxed text-white/72">
-                  Sunday morning at 11:00 AM is the easiest service to start
-                  with, but you are welcome at every gathering.
-                </p>
-                <a
-                  href="/visit"
-                  className="mt-6 inline-flex items-center gap-2 bg-amber px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-ink transition-all hover:bg-amber-light"
-                >
-                  Your First Visit
-                  <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </AnimateOnScroll>
-
-          <div className="grid gap-5 md:grid-cols-2">
-            {services.map((service, index) => (
-              <AnimateOnScroll key={service.title} delay={index * 90}>
-                <div
-                  className={`h-full border p-7 transition-all hover:-translate-y-1 ${
-                    service.featured
-                      ? "border-amber/40 bg-gradient-to-br from-[#4f3424] to-[#251d19] shadow-[0_26px_60px_-32px_rgba(200,141,87,0.45)]"
-                      : "border-white/10 bg-white/[0.05] hover:border-white/20"
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-5">
-                    <div>
-                      <p className="text-[0.64rem] font-bold uppercase tracking-[0.28em] text-white/48">
-                        {service.day}
-                      </p>
-                      <h3 className="mt-3 font-serif text-3xl text-white">
-                        {service.title}
-                      </h3>
-                    </div>
-                    {service.featured && (
-                      <span className="bg-amber px-3 py-1 text-[0.64rem] font-bold uppercase tracking-[0.16em] text-ink">
-                        Start here
-                      </span>
-                    )}
-                  </div>
-                  <p
-                    className={`mt-5 font-serif ${
-                      service.featured
-                        ? "text-5xl text-amber-light"
-                        : "text-4xl text-white"
-                    }`}
-                  >
-                    {service.time}
-                  </p>
-                  <p className="mt-5 max-w-md leading-relaxed text-white/66">
-                    {service.body}
-                  </p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-light mb-4">
+            Join us in worship
+          </span>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-5">
+            When we gather
+          </h2>
+          <p className="text-lg text-white/60 leading-relaxed">
+            First Sunday, first time back, or every single week — we&rsquo;d love
+            to save you a seat.
+          </p>
         </div>
 
-        <AnimateOnScroll delay={380}>
-          <div className="mt-10 border border-white/10 bg-white/[0.05] px-6 py-6 md:flex md:items-center md:justify-between md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {services.map((s, i) => (
+            <AnimateOnScroll key={s.title} delay={i * 90}>
+              <div
+                className={`relative rounded-2xl p-7 h-full flex flex-col transition-all hover:-translate-y-1.5 ${
+                  s.featured
+                    ? "bg-gradient-to-br from-amber/[.12] via-amber/[.06] to-transparent border border-amber/30 hover:border-amber/60 hover:shadow-[0_20px_50px_-10px_rgba(232,166,74,0.3)]"
+                    : "bg-white/[.04] border border-white/10 hover:border-teal/40 hover:bg-white/[.07] hover:shadow-[0_20px_50px_-10px_rgba(47,153,149,0.25)]"
+                }`}
+              >
+                {s.featured && (
+                  <span className="absolute -top-3 left-7 bg-amber text-ink text-[0.65rem] font-bold tracking-[0.15em] uppercase px-3.5 py-1 rounded-full shadow-lg">
+                    Main Service
+                  </span>
+                )}
+                <div className="mb-5">{s.icon}</div>
+                <p className="text-[0.7rem] font-bold tracking-[0.25em] uppercase text-white/50 mb-2">
+                  {s.day}
+                </p>
+                <h3 className="font-serif text-2xl font-semibold text-white mb-3">
+                  {s.title}
+                </h3>
+                <p className={`text-3xl font-bold mb-4 ${s.featured ? "text-amber" : "text-teal-light"}`}>
+                  {s.time}
+                </p>
+                <p className="text-sm text-white/55 leading-relaxed flex-1">{s.desc}</p>
+              </div>
+            </AnimateOnScroll>
+          ))}
+        </div>
+
+        <AnimateOnScroll delay={400}>
+          <div className="mt-16 flex flex-col md:flex-row gap-6 md:items-center justify-center text-center md:text-left border-t border-white/10 pt-10">
+            <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10 mx-auto md:mx-0 text-teal-light flex-shrink-0">
+              <path d="M24 4C16 4 10 10.5 10 18c0 10 14 26 14 26s14-16 14-26c0-7.5-6-14-14-14z" stroke="currentColor" strokeWidth="2" />
+              <circle cx="24" cy="18" r="5" stroke="currentColor" strokeWidth="2" />
+            </svg>
             <div>
-              <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-amber-light">
-                You&apos;ll find us here
-              </p>
-              <p className="mt-3 font-serif text-2xl text-white">
-                6007 Mannsiding Rd, Lake, MI 48632
+              <p className="text-white/55 text-sm uppercase tracking-[0.2em] mb-1">You&rsquo;ll find us at</p>
+              <p className="text-white text-xl font-serif">
+                6007 Mannsiding Rd &middot; Lake, MI 48632
               </p>
             </div>
             <a
               href="/visit"
-              className="mt-5 inline-flex items-center gap-2 border border-white/16 bg-white/[0.05] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-all hover:bg-white/10 md:mt-0"
+              className="md:ml-auto inline-flex items-center justify-center gap-2 bg-teal text-white font-semibold text-sm tracking-wide uppercase px-7 py-3.5 rounded-full hover:bg-teal-light hover:text-ink transition-all"
             >
               Get Directions
-              <span aria-hidden="true">→</span>
             </a>
           </div>
         </AnimateOnScroll>

@@ -2,121 +2,87 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
-const markers = [
-  {
-    title: "Bible preaching",
-    body: "The center of every service is the Word of God opened plainly and applied simply.",
-  },
-  {
-    title: "A real welcome",
-    body: "Expect handshakes, real conversation, and a church that still feels personal instead of anonymous.",
-  },
-  {
-    title: "Room for families",
-    body: "Kids are welcome, nursery help is available, and no one expects your first Sunday to be polished.",
-  },
-];
-
 export default function Welcome() {
   return (
-    <section id="welcome" className="relative overflow-hidden bg-warm-white py-28">
-      <div className="absolute inset-x-0 top-0 h-px bg-amber/30" />
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <AnimateOnScroll>
-            <div className="border border-cream-dark bg-cream p-8 md:p-10">
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-burgundy">
-                A word from our pastor
-              </p>
-              <h2 className="mt-5 font-serif text-4xl font-semibold leading-[1.02] text-text-dark text-balance md:text-5xl lg:text-6xl">
-                Honest, steady, and close to home.
-              </h2>
-              <p className="mt-7 font-serif text-2xl leading-relaxed text-burgundy-dark">
-                &quot;When people walk through our doors, we want them to hear
-                the truth clearly and feel genuinely cared for.&quot;
-              </p>
-              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.24em] text-text-light">
-                Pastor Doyle Ross III
-              </p>
-              <div className="mt-8 border-t border-amber/25 pt-7 text-lg leading-relaxed text-text-body">
-                Liberty Baptist Church is an Independent, King James Bible
-                church in Lake, Michigan. We sing the old hymns, preach
-                faithfully, and love seeing both longtime church members and
-                first-time guests settle in side by side.
+    <section id="welcome" className="relative py-28 bg-warm-white overflow-hidden">
+      {/* Subtle ornament */}
+      <div
+        className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(47,153,149,0.5) 0%, transparent 70%)" }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+        <AnimateOnScroll>
+          <div className="max-w-3xl">
+            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-dark mb-4">
+              A Word from Our Pastor
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-dark leading-[1.05] mb-8">
+              You are invited to something{" "}
+              <em className="italic text-teal">honest</em>,{" "}
+              <em className="italic text-teal">simple</em>, and{" "}
+              <em className="italic text-teal">welcoming</em>.
+            </h2>
+          </div>
+        </AnimateOnScroll>
+
+        <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-center mt-12">
+          <AnimateOnScroll className="md:col-span-2" delay={100}>
+            <div className="relative">
+              <div
+                className="absolute -inset-3 rounded-[2rem] bg-teal/15 blur-xl opacity-70"
+                aria-hidden="true"
+              />
+              <div className="relative rounded-[1.5rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(20,24,40,0.35)]">
+                <img
+                  src="/hero-1.jpg"
+                  alt="Pastor Doyle Ross III and his wife Tayler"
+                  className="w-full h-full object-cover aspect-[4/5]"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-white rounded-full px-5 py-2.5 shadow-lg border border-cream-dark">
+                <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-teal-dark">
+                  Pastor Doyle &amp; Tayler Ross
+                </p>
               </div>
             </div>
           </AnimateOnScroll>
 
-          <div className="space-y-6">
-            <AnimateOnScroll delay={120}>
-              <div className="grid gap-6 border border-cream-dark bg-white p-6 shadow-[0_22px_44px_-30px_rgba(20,32,40,0.32)] md:grid-cols-[0.82fr_1.18fr] md:p-7">
-                <div className="overflow-hidden border border-cream-dark">
-                  <img
-                    src="/hero-1.jpg"
-                    alt="Pastor Doyle Ross III and his wife Tayler"
-                    className="aspect-[4/5] w-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-burgundy">
-                      Our Pastor
-                    </p>
-                    <h3 className="mt-3 font-serif text-3xl text-text-dark">
-                      Doyle Ross III
-                    </h3>
-                    <p className="mt-4 leading-relaxed text-text-light">
-                      Serving Liberty Baptist since May 2021 alongside his wife
-                      Tayler and their four children.
-                    </p>
-                  </div>
-                  <a
-                    href="/pastor"
-                    className="mt-6 inline-flex items-center gap-2 self-start border border-ink/12 bg-cream px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-text-dark transition-all hover:bg-burgundy hover:text-white"
-                  >
-                    Read His Story
-                    <span aria-hidden="true">→</span>
-                  </a>
-                </div>
-              </div>
-            </AnimateOnScroll>
-
-            <div className="grid gap-5 sm:grid-cols-3">
-              {markers.map((marker, index) => (
-                <AnimateOnScroll key={marker.title} delay={240 + index * 100}>
-                  <div className="h-full border border-cream-dark bg-warm-white p-6 transition-all hover:-translate-y-1 hover:shadow-[0_22px_44px_-30px_rgba(20,32,40,0.28)]">
-                    <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-amber-dark">
-                      0{index + 1}
-                    </p>
-                    <h3 className="mt-4 font-serif text-2xl text-text-dark">
-                      {marker.title}
-                    </h3>
-                    <p className="mt-3 leading-relaxed text-text-light">
-                      {marker.body}
-                    </p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
-
-            <AnimateOnScroll delay={520}>
+          <AnimateOnScroll className="md:col-span-3" delay={250}>
+            <div>
+              <p className="text-xl text-text-dark leading-relaxed mb-5 font-serif">
+                &ldquo;We know how heavy life can feel. That&rsquo;s why our
+                doors are open every week — so you can sit down, breathe, and
+                hear the promise of Jesus preached plainly.&rdquo;
+              </p>
+              <p className="text-text-body leading-relaxed mb-4">
+                Liberty Baptist Church is an Independent, King James Bible
+                church in Lake, Michigan. We sing the old hymns, preach the
+                whole counsel of God, and make room for families of every
+                season — from the young parent holding a fussy baby to the
+                neighbor walking in for the very first time.
+              </p>
+              <p className="text-text-light leading-relaxed mb-8">
+                If you&rsquo;re looking for a church home, we&rsquo;d love to
+                meet you. Come just as you are.
+              </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="/we-believe"
-                  className="inline-flex items-center gap-2 bg-burgundy px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-all hover:bg-burgundy-dark"
+                  href="#pastor"
+                  className="inline-flex items-center gap-2 bg-ink text-white font-semibold text-sm tracking-wide uppercase px-7 py-3.5 rounded-full hover:bg-dusk hover:-translate-y-0.5 transition-all"
                 >
-                  What We Believe
-                  <span aria-hidden="true">→</span>
+                  Meet Pastor Ross
                 </a>
                 <a
-                  href="/visit"
-                  className="inline-flex items-center gap-2 border border-cream-dark bg-cream px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-text-dark transition-all hover:bg-cream-dark"
+                  href="/we-believe"
+                  className="inline-flex items-center gap-2 text-ink font-semibold text-sm tracking-wide uppercase px-7 py-3.5 rounded-full border-2 border-ink/20 hover:border-ink hover:bg-ink/5 transition-all"
                 >
-                  Visit This Sunday
+                  What We Believe →
                 </a>
               </div>
-            </AnimateOnScroll>
-          </div>
+            </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>

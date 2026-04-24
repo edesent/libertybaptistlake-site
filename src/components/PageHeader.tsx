@@ -6,31 +6,30 @@ interface Props {
 
 export default function PageHeader({ eyebrow, title, subtitle }: Props) {
   return (
-    <header className="relative overflow-hidden bg-ink pt-44 pb-26 text-white">
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(11,18,23,0.95) 0%, rgba(20,32,40,0.9) 100%), radial-gradient(circle at 50% 22%, rgba(200,141,87,0.16), transparent 22%), repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 106px)",
-        }}
-        aria-hidden="true"
-      />
-      <div className="relative mx-auto max-w-5xl px-6">
-        <div className="border border-white/10 bg-white/[0.04] px-6 py-10 text-center shadow-[0_24px_60px_-36px_rgba(0,0,0,0.7)] backdrop-blur-sm md:px-10 md:py-12">
-          <p className="text-xs font-bold uppercase tracking-[0.35em] text-amber-light animate-fade-up animation-delay-200">
-            {eyebrow}
+    <header className="relative pt-40 pb-20 bg-ink overflow-hidden">
+      <div className="absolute inset-0" aria-hidden="true">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 70% at 50% 0%, rgba(47,153,149,0.18) 0%, transparent 55%), radial-gradient(ellipse 60% 50% at 50% 120%, rgba(232,166,74,0.12) 0%, transparent 60%)",
+          }}
+        />
+      </div>
+      <div className="relative max-w-5xl mx-auto px-6 text-center">
+        <p className="text-xs font-bold tracking-[0.35em] uppercase text-teal-light mb-5 animate-fade-up animation-delay-200">
+          {eyebrow}
+        </p>
+        <h1 className="font-serif text-5xl md:text-7xl font-semibold text-white leading-[1.05] mb-6 animate-fade-up animation-delay-400">
+          {title}
+        </h1>
+        {subtitle && (
+          <p className="text-lg md:text-xl text-white/65 max-w-2xl mx-auto leading-relaxed animate-fade-up animation-delay-600">
+            {subtitle}
           </p>
-          <h1 className="mt-5 font-serif text-5xl font-semibold leading-[0.96] text-balance animate-fade-up animation-delay-400 md:text-7xl lg:text-8xl">
-            {title}
-          </h1>
-          {subtitle && (
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/68 text-balance animate-fade-up animation-delay-600 md:text-xl">
-              {subtitle}
-            </p>
-          )}
-          <div className="mt-8 flex justify-center animate-fade-up animation-delay-800">
-            <div className="h-px w-20 bg-gradient-to-r from-transparent via-amber to-transparent" />
-          </div>
+        )}
+        <div className="mt-10 flex justify-center animate-fade-up animation-delay-800">
+          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-amber to-transparent" />
         </div>
       </div>
     </header>

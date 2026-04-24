@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
+
+const serif = Cormorant_Garamond({
+  variable: "--font-serif-site",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const sans = Inter({
+  variable: "--font-sans-site",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lbclakegeorge.com"),
   title: {
     default:
-      "Liberty Baptist Church - Independent KJV Baptist Church in Lake, MI",
+      "Liberty Baptist Church — Independent KJV Baptist Church in Lake, MI",
     template: "%s | Liberty Baptist Church",
   },
   description:
@@ -26,7 +41,7 @@ export const metadata: Metadata = {
   publisher: "Liberty Baptist Church",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Liberty Baptist Church - Lake, MI",
+    title: "Liberty Baptist Church — Lake, MI",
     description:
       "Discover the light of Jesus at Liberty Baptist Church. KJV preaching, traditional worship, and a warm church family in Lake, Michigan.",
     url: "https://www.lbclakegeorge.com",
@@ -36,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liberty Baptist Church - Lake, MI",
+    title: "Liberty Baptist Church — Lake, MI",
     description:
       "Independent KJV Baptist church in Lake, Michigan. All are welcome.",
   },
@@ -57,8 +72,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="antialiased">
-      <body className="min-h-screen flex flex-col bg-warm-white text-text-body">
+    <html
+      lang="en"
+      className={`${serif.variable} ${sans.variable} antialiased`}
+    >
+      <body className="min-h-screen flex flex-col bg-warm-white">
         {children}
       </body>
     </html>
