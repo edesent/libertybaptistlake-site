@@ -31,19 +31,11 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/[.08]">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <span className="flex items-center justify-center w-14 h-14 rounded-full bg-white/[.08] border border-white/15">
-                <img src="/lbc-logo.png" alt="" className="w-10 h-10 object-contain brightness-0 invert" />
-              </span>
-              <div className="leading-tight">
-                <p className="font-serif text-white text-lg font-semibold">
-                  Liberty Baptist
-                </p>
-                <p className="text-[0.65rem] tracking-[0.25em] uppercase text-teal-light/80 mt-1">
-                  Lake, Michigan
-                </p>
-              </div>
-            </div>
+            <img
+              src="/speaking-the-truth-in-love.png"
+              alt="Liberty Baptist Church"
+              className="w-full max-w-[14rem] object-contain mb-6"
+            />
             <p className="text-sm leading-relaxed text-white/60">
               6007 Mannsiding Rd<br />
               Lake, MI 48632<br />
@@ -105,11 +97,11 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className="font-serif italic text-sm text-white/45 leading-relaxed">
+            <p className="font-serif italic text-base md:text-lg text-white/55 leading-relaxed">
               &ldquo;But speaking the truth in love, may grow up into him in
               all things, which is the head, even Christ:&rdquo;
             </p>
-            <p className="text-[0.7rem] tracking-[0.2em] uppercase text-white/30 mt-2">
+            <p className="text-xs tracking-[0.2em] uppercase text-white/40 mt-3">
               &mdash; Ephesians 4:15
             </p>
           </div>

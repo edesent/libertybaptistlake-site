@@ -86,11 +86,21 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl px-6 py-20">
         <div className="flex justify-center animate-fade-up animation-delay-600">
-          <img
-            src="/speaking-the-truth-in-love.png"
-            alt="Liberty Baptist Church"
-            className="w-full max-w-[18rem] md:max-w-[24rem] lg:max-w-[28rem] object-contain drop-shadow-[0_0_40px_rgba(5,8,16,0.45)]"
-          />
+          <div className="relative">
+            <span
+              className="absolute inset-0 rounded-full bg-amber-light/25 blur-3xl scale-110 animate-glow-pulse"
+              aria-hidden="true"
+            />
+            <span
+              className="absolute inset-0 rounded-full bg-teal/15 blur-2xl scale-95"
+              aria-hidden="true"
+            />
+            <img
+              src="/speaking-the-truth-in-love.png"
+              alt="Liberty Baptist Church"
+              className="relative w-full max-w-[18rem] md:max-w-[24rem] lg:max-w-[28rem] object-contain drop-shadow-[0_0_30px_rgba(245,207,140,0.35)]"
+            />
+          </div>
         </div>
 
         <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-teal-light to-transparent mx-auto my-8 animate-fade-up animation-delay-800" />
