@@ -30,11 +30,11 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/[.08]">
           {/* Brand */}
-          <div>
+          <div className="text-center sm:text-left">
             <img
               src="/speaking-the-truth-in-love.png"
               alt="Liberty Baptist Church"
-              className="w-full max-w-[14rem] object-contain mb-6"
+              className="w-full max-w-[14rem] object-contain mb-6 mx-auto sm:mx-0"
             />
             <p className="text-sm leading-relaxed text-white/60">
               6007 Mannsiding Rd<br />
@@ -45,14 +45,14 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="font-serif text-base font-semibold text-white mb-5">Visit</h4>
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/55 hover:text-teal-light hover:pl-1 transition-all inline-block"
+                    className="text-sm text-white/55 hover:text-teal-light sm:hover:pl-1 transition-all inline-block"
                   >
                     {link.label}
                   </a>
@@ -61,7 +61,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="font-serif text-base font-semibold text-white mb-5">Gather</h4>
             <ul className="space-y-2.5">
               {serviceTimes.map((s) => (
@@ -73,9 +73,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="font-serif text-base font-semibold text-white mb-5">Connect</h4>
-            <div className="flex gap-3 mb-6">
+            <div className="flex gap-3 mb-6 justify-center sm:justify-start">
               <a
                 href="https://www.facebook.com/LBCLakeGeorge/"
                 target="_blank"

@@ -58,11 +58,11 @@ export default function Navbar() {
           aria-label="Liberty Baptist Church"
         >
           <span className="flex flex-col leading-tight">
-            <span className="font-serif text-white text-lg md:text-xl font-semibold tracking-wide">
+            <span className="font-serif text-white text-xl md:text-2xl font-bold tracking-wide">
               Liberty Baptist
-              <span className="hidden md:inline text-teal-light/85 font-normal"> Church</span>
+              <span className="text-teal-light/85 font-semibold"> Church</span>
             </span>
-            <span className="text-[0.65rem] tracking-[0.3em] uppercase text-white/50 mt-0.5">
+            <span className="text-[0.7rem] tracking-[0.3em] uppercase text-white/55 mt-0.5 font-medium">
               Lake, Michigan
             </span>
           </span>
