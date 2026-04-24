@@ -116,7 +116,7 @@ export default function VisitCTA() {
 
         <AnimateOnScroll delay={300}>
           <div className="mt-14 text-center">
-            <p className="font-serif italic text-lg text-text-light mb-4">
+            <p className="font-serif italic text-2xl md:text-3xl lg:text-4xl text-text-light leading-relaxed max-w-3xl mx-auto mb-6">
               &ldquo;If you cannot come, we&rsquo;ll come to you. If you have
               questions, just ask. We mean it.&rdquo;
             </p>

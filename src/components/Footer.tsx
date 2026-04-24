@@ -34,7 +34,7 @@ export default function Footer() {
             <img
               src="/speaking-the-truth-in-love.png"
               alt="Liberty Baptist Church"
-              className="w-full max-w-[14rem] object-contain mb-6 mx-auto sm:mx-0"
+              className="w-full max-w-[14rem] object-contain mb-6 mx-auto"
             />
             <p className="text-sm leading-relaxed text-white/60 sm:text-center">
               6007 Mannsiding Rd<br />

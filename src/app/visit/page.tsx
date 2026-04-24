@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import VisitCTA from "@/components/VisitCTA";
+import VisitForm from "@/components/VisitForm";
 
 export const metadata: Metadata = {
   title: "Plan a Visit",
@@ -73,6 +74,25 @@ export default function VisitPage() {
       </section>
 
       <VisitCTA />
+
+      <section className="py-24 bg-cream-dark/40">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-dark mb-4">
+              Let us know you&rsquo;re coming
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-text-dark mb-5">
+              Tell Pastor Ross you&rsquo;ll be there
+            </h2>
+            <p className="text-lg text-text-light leading-relaxed">
+              It&rsquo;s not required &mdash; but a quick note helps us save you a seat,
+              answer questions ahead of time, and greet you by name.
+            </p>
+          </div>
+          <VisitForm />
+        </div>
+      </section>
+
       <Footer />
     </>
   );
