@@ -36,7 +36,7 @@ export default function Footer() {
               alt="Liberty Baptist Church"
               className="w-full max-w-[14rem] object-contain mb-6 mx-auto sm:mx-0"
             />
-            <p className="text-sm leading-relaxed text-white/60">
+            <p className="text-sm leading-relaxed text-white/60 sm:text-center">
               6007 Mannsiding Rd<br />
               Lake, MI 48632<br />
               <a href="tel:+19895887039" className="text-teal-light hover:text-white transition-colors">

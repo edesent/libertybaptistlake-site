@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   publisher: "Liberty Baptist Church",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Liberty Baptist Church — Lake, MI",
+    title: "Liberty Baptist Church — Lake George, MI",
     description:
       "Discover the light of Jesus at Liberty Baptist Church. KJV preaching, traditional worship, and a warm church family in Lake, Michigan.",
     url: "https://www.lbclakegeorge.com",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liberty Baptist Church — Lake, MI",
+    title: "Liberty Baptist Church — Lake George, MI",
     description:
       "Independent KJV Baptist church in Lake, Michigan. All are welcome.",
   },
