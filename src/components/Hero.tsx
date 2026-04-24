@@ -18,11 +18,6 @@ export default function Hero() {
       className="relative overflow-hidden bg-ink text-white"
     >
       <div className="absolute inset-0">
-        <img
-          src="/church-image-of-lake-george-mi.webp"
-          alt="Liberty Baptist Church in Lake George, Michigan"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
         <div
           className="absolute inset-0"
           style={{
