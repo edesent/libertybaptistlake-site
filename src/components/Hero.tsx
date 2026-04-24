@@ -16,11 +16,16 @@ export default function Hero() {
     >
       {/* Background — layered night scene */}
       <div className="absolute inset-0 z-0">
+        <img
+          src="/church-image-of-lake-george-mi.webp"
+          alt="Liberty Baptist Church in Lake George, Michigan"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 90% 70% at 50% 110%, #1f2e4a 0%, #10162f 45%, #050810 100%)",
+              "linear-gradient(180deg, rgba(5,8,16,0.78) 0%, rgba(16,22,47,0.74) 42%, rgba(5,8,16,0.92) 100%), radial-gradient(ellipse 90% 70% at 50% 110%, rgba(31,46,74,0.72) 0%, rgba(16,22,47,0.58) 45%, rgba(5,8,16,0.88) 100%)",
           }}
         />
         {/* Aurora / warm glow from below — the "light" */}
