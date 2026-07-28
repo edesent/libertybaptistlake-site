@@ -10,7 +10,7 @@ const quickLinks: { href: string; label: string; external?: boolean }[] = [
   { href: "/ministries", label: "Ministries" },
   { href: "/events", label: "Events" },
   { href: "/visit", label: "Plan a Visit" },
-  { href: GIVELIFY_URL, label: "Give Online", external: true },
+  { href: "/give", label: "Give Online" },
 ];
 
 const serviceTimes = [
