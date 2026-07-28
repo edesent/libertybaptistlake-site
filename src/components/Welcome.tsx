@@ -26,7 +26,7 @@ export default function Welcome() {
                 <em className="italic text-teal">welcoming</em>.
               </h2>
             </div>
-            <div className="relative w-full lg:w-96 lg:flex-shrink-0">
+            <div className="relative w-full lg:w-[30rem] lg:flex-shrink-0">
               <div
                 className="absolute -inset-3 rounded-[2rem] bg-teal/15 blur-xl opacity-70"
                 aria-hidden="true"
