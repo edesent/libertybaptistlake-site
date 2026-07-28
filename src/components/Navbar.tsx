@@ -10,6 +10,7 @@ const navLinks = [
   { href: "#pastor", label: "Our Pastor" },
   { href: "/we-believe", label: "We Believe" },
   { href: "/ministries", label: "Ministries" },
+  { href: "/events", label: "Events" },
 ];
 
 export default function Navbar() {
