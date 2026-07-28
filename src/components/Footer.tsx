@@ -8,6 +8,7 @@ const quickLinks: { href: string; label: string; external?: boolean }[] = [
   { href: "#pastor", label: "Our Pastor" },
   { href: "/we-believe", label: "We Believe" },
   { href: "/ministries", label: "Ministries" },
+  { href: "/events", label: "Events" },
   { href: "/visit", label: "Plan a Visit" },
   { href: GIVELIFY_URL, label: "Give Online", external: true },
 ];
