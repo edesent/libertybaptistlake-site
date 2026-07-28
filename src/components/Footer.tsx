@@ -1,6 +1,3 @@
-const GIVELIFY_URL =
-  "https://www.givelify.com/donate/liberty-baptist-church-lake-mi-2j7wy5MTUyNzc2NQ==/donation/amount";
-
 const quickLinks: { href: string; label: string; external?: boolean }[] = [
   { href: "#home", label: "Home" },
   { href: "#welcome", label: "Welcome" },
