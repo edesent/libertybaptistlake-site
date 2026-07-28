@@ -186,13 +186,13 @@ export default function EventsCalendar() {
           </div>
 
           <div className="border-t border-black/[.06] bg-cream-dark/40 px-8 py-8">
-            {upcoming.length > 0 ? (
+            {upcomingGrouped.length > 0 ? (
               <>
                 <p className="font-serif text-xl md:text-2xl font-semibold text-text-dark mb-5 text-center">
                   Upcoming Events
                 </p>
                 <ul className="space-y-3 max-w-md mx-auto">
-                  {upcoming.map((e, i) => (
+                  {upcomingGrouped.map((e, i) => (
                     <li
                       key={i}
                       className="flex items-center justify-between gap-4 bg-warm-white rounded-xl px-5 py-3 border border-black/[.04]"
@@ -207,7 +207,7 @@ export default function EventsCalendar() {
                         </p>
                       </div>
                       <p className="text-sm text-text-muted whitespace-nowrap">
-                        Service Time {e.time}
+                        Service Time {e.times.join(", and ")}
                       </p>
                     </li>
                   ))}
