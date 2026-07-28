@@ -210,9 +210,11 @@ export default function EventsCalendar() {
                           )}
                         </p>
                       </div>
-                      <p className="text-sm text-text-muted whitespace-nowrap">
-                        Service Time {e.times.join(", and ")}
-                      </p>
+                      <div className="text-sm text-text-muted text-right whitespace-nowrap">
+                        {e.times.map((t, ti) => (
+                          <p key={ti}>{ti === 0 ? `Service Time ${t}` : `and ${t}`}</p>
+                        ))}
+                      </div>
                     </li>
                   ))}
                 </ul>
