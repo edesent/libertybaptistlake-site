@@ -13,8 +13,11 @@ type CalendarEvent = {
 const EVENTS: CalendarEvent[] = [
   { title: "Tent Revival", date: "2026-08-09", time: "6:00 PM – 8:00 PM" },
   { title: "Tent Revival", date: "2026-08-10", time: "7:00 PM – 9:00 PM" },
+  { title: "Tent Revival", date: "2026-08-11", time: "10:00 AM – 11:00 AM" },
   { title: "Tent Revival", date: "2026-08-11", time: "7:00 PM – 9:00 PM" },
+  { title: "Tent Revival", date: "2026-08-12", time: "10:00 AM – 11:00 AM" },
   { title: "Tent Revival", date: "2026-08-12", time: "7:00 PM – 9:00 PM" },
+  { title: "Tent Revival", date: "2026-08-13", time: "10:00 AM – 11:00 AM" },
   { title: "Tent Revival", date: "2026-08-13", time: "7:00 PM – 9:00 PM" },
 ];
 
