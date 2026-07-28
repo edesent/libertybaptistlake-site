@@ -37,6 +37,17 @@ export default function EventsCalendar() {
     .sort(
       (a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time)
     );
+
+  type GroupedEvent = { title: string; date: string; times: string[] };
+  const upcomingGrouped: GroupedEvent[] = [];
+  for (const e of upcoming) {
+    const last = upcomingGrouped[upcomingGrouped.length - 1];
+    if (last && last.date === e.date && last.title === e.title) {
+      last.times.push(e.time);
+    } else {
+      upcomingGrouped.push({ title: e.title, date: e.date, times: [e.time] });
+    }
+  }
   const initial = upcoming.length
     ? new Date(`${upcoming[0].date}T00:00:00`)
     : today;
