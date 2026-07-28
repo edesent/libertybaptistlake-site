@@ -18,6 +18,7 @@ export default function EventsPage() {
         eyebrow="Save the Date"
         title="Events"
         subtitle="Gatherings, services, and special occasions — all in one place."
+        glow
       />
       <EventsCalendar />
       <Footer />
