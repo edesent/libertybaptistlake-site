@@ -6,7 +6,7 @@ interface Props {
 
 export default function PageHeader({ eyebrow, title, subtitle }: Props) {
   return (
-    <header className="relative pt-40 pb-20 bg-ink overflow-hidden">
+    <header className="relative pt-40 pb-8 bg-ink overflow-hidden">
       <div className="absolute inset-0" aria-hidden="true">
         <div
           className="absolute inset-0"
