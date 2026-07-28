@@ -73,6 +73,7 @@ export default function WeBelievePage() {
         eyebrow="Our Doctrine"
         title="We Believe"
         subtitle="The sum of all our theological beliefs is Jesus Christ. What follows is a summary of the truths He has given us in His Word."
+        glow
       />
 
       <section className="py-24 bg-warm-white">
