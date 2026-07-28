@@ -160,9 +160,18 @@ export default function EventsCalendar() {
                     key={i}
                     title={
                       dayEvents?.length
-                        ? `${dayEvents[0].title}: Service Time ${dayEvents
-                            .map((e) => e.time)
-                            .join(", and ")}`
+                        ? Array.from(
+                            dayEvents.reduce((map, e) => {
+                              if (!map.has(e.title)) map.set(e.title, []);
+                              map.get(e.title)!.push(e.time);
+                              return map;
+                            }, new Map<string, string[]>())
+                          )
+                            .map(
+                              ([title, times]) =>
+                                `${title}: Service Time ${times.join(", and ")}`
+                            )
+                            .join("\n")
                         : undefined
                     }
                     className={`relative aspect-square flex items-center justify-center rounded-lg text-sm ${
