@@ -214,7 +214,19 @@ export default function EventsCalendar() {
                       className="flex items-center justify-between gap-4 bg-warm-white rounded-xl px-5 py-3 border border-black/[.04]"
                     >
                       <div>
-                        <p className="font-semibold text-text-dark">{e.title}</p>
+                        <p className="font-semibold text-text-dark">
+                          <span
+                            aria-hidden="true"
+                            className={
+                              e.title === "BBBB Fellowship"
+                                ? "text-blue-500"
+                                : "text-red-500"
+                            }
+                          >
+                            ★{" "}
+                          </span>
+                          {e.title}
+                        </p>
                         <p className="text-sm text-text-light">
                           {new Date(`${e.date}T00:00:00`).toLocaleDateString(
                             "en-US",
