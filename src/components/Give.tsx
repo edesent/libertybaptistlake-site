@@ -5,7 +5,7 @@ export default function Give() {
   return (
     <>
       {/* Enticing graphic banner */}
-      <section className="relative bg-ink overflow-hidden py-20 md:py-28">
+      <section className="relative bg-ink overflow-hidden pt-2 pb-20 md:pt-4 md:pb-28">
         <div className="absolute inset-0" aria-hidden="true">
           <div
             className="absolute inset-0"
