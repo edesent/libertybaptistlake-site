@@ -14,16 +14,31 @@ export default function Welcome() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         <AnimateOnScroll>
-          <div className="max-w-3xl">
-            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-dark mb-4">
-              A Word from Our Pastor
-            </span>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-dark leading-[1.05] mb-8">
-              You are invited to something{" "}
-              <em className="italic text-teal">honest</em>,{" "}
-              <em className="italic text-teal">simple</em>, and{" "}
-              <em className="italic text-teal">welcoming</em>.
-            </h2>
+          <div className="relative rounded-[1.75rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(20,24,40,0.35)] px-6 py-20 md:px-14 md:py-28">
+            <img
+              src="/unnamed.jpg"
+              alt="The Liberty Baptist Church congregation gathered together"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              aria-hidden="true"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(5,8,16,0.75) 0%, rgba(5,8,16,0.55) 45%, rgba(5,8,16,0.8) 100%)",
+              }}
+            />
+            <div className="relative max-w-3xl">
+              <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-light mb-4">
+                A Word from Our Pastor
+              </span>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-[1.05]">
+                You are invited to something{" "}
+                <em className="italic text-teal-light">honest</em>,{" "}
+                <em className="italic text-teal-light">simple</em>, and{" "}
+                <em className="italic text-teal-light">welcoming</em>.
+              </h2>
+            </div>
           </div>
         </AnimateOnScroll>
 
