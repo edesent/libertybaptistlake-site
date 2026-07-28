@@ -196,7 +196,7 @@ export default function EventsCalendar() {
                         </p>
                       </div>
                       <p className="text-sm text-text-muted whitespace-nowrap">
-                        {e.time}
+                        Service Time {e.time}
                       </p>
                     </li>
                   ))}
