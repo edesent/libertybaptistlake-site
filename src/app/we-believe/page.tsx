@@ -92,7 +92,15 @@ export default function WeBelievePage() {
                     {a.title}
                   </h2>
                   <p className="text-[1.05rem] text-text-body leading-relaxed mb-5">
-                    {a.body}
+                    {a.num === "01" ? (
+                      <>
+                        {a.body.split("King James Version")[0]}
+                        <strong>King James Version</strong>
+                        {a.body.split("King James Version")[1]}
+                      </>
+                    ) : (
+                      a.body
+                    )}
                   </p>
                   <p className="text-[0.8rem] font-bold tracking-[0.18em] uppercase text-amber-dark">
                     {a.verses}
