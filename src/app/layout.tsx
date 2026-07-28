@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Liberty Baptist Church",
   },
   description:
-    "Discover the light of Jesus at Liberty Baptist Church in Lake, Michigan. Pastor Doyle Ross III preaches the King James Bible. Sunday 10 AM, 11 AM & 6 PM. Thursday prayer at 6:30 PM. All are welcome.",
+    "Discover the light of Jesus at Liberty Baptist Church in Lake, Michigan. Pastor Doyle Ross III preaches the King James Bible. Sunday 10 AM, 11 AM & 6 PM. Thursday prayer at 7 PM. All are welcome.",
   keywords: [
     "Liberty Baptist Church",
     "Baptist church Lake MI",
