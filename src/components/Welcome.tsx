@@ -14,31 +14,16 @@ export default function Welcome() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         <AnimateOnScroll>
-          <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-14">
-            <div className="max-w-3xl">
-              <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-dark mb-4">
-                A Word from Our Pastor
-              </span>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-dark leading-[1.05] mb-8">
-                You are invited to something{" "}
-                <em className="italic text-teal">honest</em>,{" "}
-                <em className="italic text-teal">simple</em>, and{" "}
-                <em className="italic text-teal">welcoming</em>.
-              </h2>
-            </div>
-            <div className="relative w-full lg:w-[30rem] lg:flex-shrink-0">
-              <div
-                className="absolute -inset-3 rounded-[2rem] bg-teal/15 blur-xl opacity-70"
-                aria-hidden="true"
-              />
-              <div className="relative rounded-[1.5rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(20,24,40,0.35)]">
-                <img
-                  src="/unnamed.jpg"
-                  alt="The Liberty Baptist Church congregation gathered together"
-                  className="w-full h-full object-cover aspect-[4/3]"
-                />
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-teal-dark mb-4">
+              A Word from Our Pastor
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-dark leading-[1.05] mb-8">
+              You are invited to something{" "}
+              <em className="italic text-teal">honest</em>,{" "}
+              <em className="italic text-teal">simple</em>, and{" "}
+              <em className="italic text-teal">welcoming</em>.
+            </h2>
           </div>
         </AnimateOnScroll>
 
