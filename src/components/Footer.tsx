@@ -16,7 +16,7 @@ const serviceTimes = [
   { label: "Sunday School", time: "10:00 AM" },
   { label: "Morning Worship", time: "11:00 AM" },
   { label: "Evening Service", time: "6:00 PM" },
-  { label: "Thursday Prayer", time: "6:30 PM" },
+  { label: "Thursday Prayer", time: "7:00 PM" },
 ];
 
 export default function Footer() {
