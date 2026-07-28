@@ -7,7 +7,7 @@ import Give from "@/components/Give";
 export const metadata: Metadata = {
   title: "Give",
   description:
-    "Support the ministry of Liberty Baptist Church with a one-time gift or monthly tithe through Givelify.",
+    "Support the ministry of Liberty Baptist Church with a one-time gift or weekly tithe through Givelify.",
 };
 
 export default function GivePage() {
