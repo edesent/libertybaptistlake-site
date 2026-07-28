@@ -169,7 +169,9 @@ export default function EventsCalendar() {
                           )
                             .map(
                               ([title, times]) =>
-                                `${title}: Service Time ${times.join(", and ")}`
+                                `${title}: ${
+                                  title === "BBBB Fellowship" ? "Time" : "Service Time"
+                                } ${times.join(", and ")}`
                             )
                             .join("\n")
                         : undefined
