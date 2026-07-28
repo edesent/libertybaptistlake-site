@@ -18,6 +18,7 @@ export default function GivePage() {
         eyebrow="Support the Ministry"
         title="Give"
         subtitle="Whether a one-time gift or your ongoing tithe, thank you for partnering with us."
+        glow
       />
       <Give />
       <Footer />
