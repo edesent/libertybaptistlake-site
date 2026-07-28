@@ -34,7 +34,9 @@ export default function EventsCalendar() {
   // Default to the month of the earliest upcoming event, if there is one;
   // otherwise show the current month.
   const upcoming = EVENTS.filter((e) => new Date(`${e.date}T23:59:59`) >= today)
-    .sort((a, b) => a.date.localeCompare(b.date));
+    .sort(
+      (a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time)
+    );
   const initial = upcoming.length
     ? new Date(`${upcoming[0].date}T00:00:00`)
     : today;
