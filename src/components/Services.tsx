@@ -43,7 +43,7 @@ const services = [
   {
     day: "Thursday",
     title: "Prayer & Bible Study",
-    time: "6:30 PM",
+    time: "7:00 PM",
     desc: "Midweek prayer meeting and verse-by-verse study. A good place to bring burdens.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 text-teal-light">
