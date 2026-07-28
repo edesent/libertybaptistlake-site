@@ -146,7 +146,9 @@ export default function EventsCalendar() {
                 return (
                   <div
                     key={i}
-                    title={dayEvents?.map((e) => `${e.title}: ${e.time}`).join("\n")}
+                    title={dayEvents
+                      ?.map((e) => `${e.title}: Service Time ${e.time}`)
+                      .join("\n")}
                     className={`relative aspect-square flex items-center justify-center rounded-lg text-sm ${
                       day === null
                         ? ""
