@@ -141,11 +141,11 @@ export default function Give() {
                 </svg>
               </div>
               <h3 className="relative font-serif text-2xl font-semibold text-white mb-3">
-                Monthly Tithe
+                Weekly Tithe
               </h3>
               <p className="relative text-sm text-white/60 leading-relaxed mb-8">
-                Set up recurring giving to faithfully support the ongoing
-                ministry and mission of Liberty Baptist Church.
+                Your weekly tithe faithfully supports the ongoing ministry and
+                mission of Liberty Baptist Church.
               </p>
               <a
                 href={GIVELIFY_URL}
