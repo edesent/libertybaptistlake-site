@@ -157,9 +157,13 @@ export default function EventsCalendar() {
                 return (
                   <div
                     key={i}
-                    title={dayEvents
-                      ?.map((e) => `${e.title}: Service Time ${e.time}`)
-                      .join("\n")}
+                    title={
+                      dayEvents?.length
+                        ? `${dayEvents[0].title}: Service Time ${dayEvents
+                            .map((e) => e.time)
+                            .join(", and ")}`
+                        : undefined
+                    }
                     className={`relative aspect-square flex items-center justify-center rounded-lg text-sm ${
                       day === null
                         ? ""
