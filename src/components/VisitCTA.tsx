@@ -73,7 +73,7 @@ export default function VisitCTA() {
                       </li>
                       <li className="flex justify-between border-t border-white/10 pt-1.5 mt-1.5">
                         <span>Thursday Prayer</span>
-                        <span className="text-amber-light font-semibold">6:30 PM</span>
+                        <span className="text-amber-light font-semibold">7:00 PM</span>
                       </li>
                     </ul>
                   </div>
