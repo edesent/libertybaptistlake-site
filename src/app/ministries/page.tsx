@@ -18,6 +18,7 @@ export default function MinistriesPage() {
         eyebrow="Get Connected"
         title="Ministries"
         subtitle="Every age, every season. Here's where we grow together."
+        glow
       />
       <Ministries />
       <Footer />
