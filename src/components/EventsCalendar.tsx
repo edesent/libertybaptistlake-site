@@ -221,9 +221,13 @@ export default function EventsCalendar() {
                         </p>
                       </div>
                       <div className="text-sm text-text-muted text-right whitespace-nowrap">
-                        {e.times.map((t, ti) => (
-                          <p key={ti}>{ti === 0 ? `Service Time ${t}` : `and ${t}`}</p>
-                        ))}
+                        {e.times.map((t, ti) => {
+                          const label =
+                            e.title === "BBBB Fellowship" ? "Time" : "Service Time";
+                          return (
+                            <p key={ti}>{ti === 0 ? `${label} ${t}` : `and ${t}`}</p>
+                          );
+                        })}
                       </div>
                     </li>
                   ))}
